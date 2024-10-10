@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <style>
+        .full-screen-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;  /* Largeur à 100% de la fenêtre */
+            height: 100vh;  /* Hauteur à 100% de la fenêtre */
+            object-fit: cover;  /* Maintenir les proportions de l'image tout en remplissant l'écran */
+            z-index: -1;  /* S'assurer que l'image reste en arrière-plan */
+        }
+    </style>
+
+    <img src="{{ asset('images/image-ciel-qui-mots-connecte-elle_994023-378801.avif') }}" alt="fond d'écran" class="full-screen-background">
+{% endblock %}
